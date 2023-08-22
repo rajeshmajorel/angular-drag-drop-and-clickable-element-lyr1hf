@@ -1,0 +1,8 @@
+<div class="boundary">
+	<div class="bluebox" cdkDragBoundary=".boundary" (cdkDragStarted)="handleDragStart($event)"
+		(click)="handleClick($event)" cdkDrag></div>
+	<svg>
+		<rect cdkDrag cdkDragBoundary=".boundary" x="10" y="10" width="50" height="50"></rect>
+		<circle cdkDrag cdkDragBoundary=".boundary" cx="50" cy="100" r="20"></circle>
+	</svg>
+</div>
